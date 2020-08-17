@@ -1,16 +1,10 @@
 # jv-lambda-calc
 
-Напишите калькулятор с помощью лямбды. Метод должен принимать 2 цифровых значения и char как операцию. Вам надо вписать 3 параметра в сигнатуру метода calculate.
+Write a calculator. Method should accept three parameters: two numeric values and char as operation. 
+This method should be able to perform the following operations: 
 
-Что должен уметь этот метод:
-
-- складывать;
-- умножать;
-- делить;
-- вычитать;
-- возводить в степень;
-
-Что нельзя использовать:
-
-- if-else;
-- switch-case;
+- Addition
+- Subtraction
+- Division
+- Multiplication
+- raising to the power
