@@ -7,4 +7,6 @@ This method should be able to perform the following operations:
 - Subtraction
 - Division
 - Multiplication
-- raising to the power
+- raising to a power
+
+[Try to avoid these common mistakes while solving the task](https://mate-academy.github.io/jv-program-common-mistakes/java-core/junit/lambda-calc)
