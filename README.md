@@ -24,6 +24,8 @@ In your test class you should cover such test cases:
 - raising zero to power;
 - illegal operation;
 
+P.S. Feel free to cover other test cases.
+
 In some cases, you'll have to use delta value in `assertEquals` for doubles. Difference should be less than DELTA in order for test to pass;
 For example: 
 ```java
