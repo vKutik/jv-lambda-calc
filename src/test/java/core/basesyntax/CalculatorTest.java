@@ -69,7 +69,6 @@ class CalculatorTest {
         double expected = 1;
         double actual = calculator.calculate(5, 4, SUBTRACTION);
         assertEquals(expected, actual, DELTA);
-
     }
 
     @Test
@@ -215,7 +214,6 @@ class CalculatorTest {
         double expected = 1.0;
         double actual = calculator.calculate(-5, 0, RAISING);
         assertEquals(expected, actual, DELTA);
-
     }
 
     @Test
@@ -231,5 +229,4 @@ class CalculatorTest {
                 calculator.calculate(2, 2, ILLEGAL_OPERATOR)
         );
     }
-
 }
