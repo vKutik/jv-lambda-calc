@@ -1,22 +1,30 @@
 package core.basesyntax;
 
 public class Calculator {
+    private static final char ADDITION = '+';
+    private static final char SUBSTRACTION = '-';
+    private static final char MULTIPLICATION = '*';
+    private static final char DIVISION = '/';
+    private static final char RAISING = '^';
+
     public double calculate(double a, double b, char operation) {
-        if (operation == '+') {
-            return a + b;
+
+        switch (operation) {
+            case ADDITION:
+                return a + b;
+            case SUBSTRACTION:
+                return a - b;
+            case MULTIPLICATION:
+                return a * b;
+            case DIVISION:
+                if (b != 0) {
+                    return a / b;
+                }
+                throw new ArithmeticException("Divide by 0");
+            case RAISING:
+                return Math.pow(a, b);
+            default:
+                throw new IllegalArgumentException("Unexpected argument: " + operation);
         }
-        if (operation == '-') {
-            return a - b;
-        }
-        if (operation == '/' && a != 0 && b != 0) {
-            return a / b;
-        }
-        if (operation == '*' && a != 0 && b != 0) {
-            return a * b;
-        }
-        if (operation == '^') {
-            return a != 0 || b != 0 ? Math.pow(a, b) : a != 0 && b == 0 ? 1.0 : 0;
-        }
-        return 0;
     }
 }
