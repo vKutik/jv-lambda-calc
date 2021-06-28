@@ -8,7 +8,6 @@ public class Calculator {
     private static final char RAISING = '^';
 
     public double calculate(double a, double b, char operation) {
-
         switch (operation) {
             case ADDITION:
                 return a + b;
