@@ -2,7 +2,7 @@ package core.basesyntax;
 
 public class Calculator {
     private static final char ADDITION = '+';
-    private static final char SUBSTRACTION = '-';
+    private static final char SUBTRACTION = '-';
     private static final char MULTIPLICATION = '*';
     private static final char DIVISION = '/';
     private static final char RAISING = '^';
@@ -12,7 +12,7 @@ public class Calculator {
         switch (operation) {
             case ADDITION:
                 return a + b;
-            case SUBSTRACTION:
+            case SUBTRACTION:
                 return a - b;
             case MULTIPLICATION:
                 return a * b;
