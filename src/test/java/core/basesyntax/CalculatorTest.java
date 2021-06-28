@@ -9,13 +9,13 @@ import org.junit.jupiter.api.Test;
 
 class CalculatorTest {
     private static final double DELTA = 0.0001;
-    private static Calculator calculator;
     private static final char ADDITION = '+';
     private static final char SUBTRACTION = '-';
     private static final char MULTIPLICATION = '*';
     private static final char DIVISION = '/';
     private static final char RAISING = '^';
     private static final char ILLEGAL_OPERATOR = '#';
+    private static Calculator calculator;
 
     @BeforeAll
     static void beforeAll() {
@@ -102,7 +102,9 @@ class CalculatorTest {
     @Test
     void calculate_subtractionMinMaxDouble_ok() {
         double expected = Double.MAX_VALUE - Double.MIN_VALUE;
-        double actual = calculator.calculate(Double.MAX_VALUE, Double.MIN_VALUE, SUBTRACTION);
+        double actual = calculator.calculate(Double.MAX_VALUE,
+                                             Double.MIN_VALUE,
+                                             SUBTRACTION);
         assertEquals(expected, actual, DELTA);
     }
 
