@@ -11,7 +11,7 @@ class CalculatorTest {
     private static final double DELTA = 0.0001;
     private static Calculator calculator;
     private static final char ADDITION = '+';
-    private static final char SUBSTRACTION = '-';
+    private static final char SUBTRACTION = '-';
     private static final char MULTIPLICATION = '*';
     private static final char DIVISION = '/';
     private static final char RAISING = '^';
@@ -67,7 +67,7 @@ class CalculatorTest {
     @Test
     void calculate_subtractionTwoPositive_ok() {
         double expected = 1;
-        double actual = calculator.calculate(5, 4, SUBSTRACTION);
+        double actual = calculator.calculate(5, 4, SUBTRACTION);
         assertEquals(expected, actual, DELTA);
 
     }
@@ -75,35 +75,35 @@ class CalculatorTest {
     @Test
     void calculate_subtractionTwoNegative_ok() {
         double expected = -3;
-        double actual = calculator.calculate(-5, -2, SUBSTRACTION);
+        double actual = calculator.calculate(-5, -2, SUBTRACTION);
         assertEquals(expected, actual, DELTA);
     }
 
     @Test
     void calculate_subtractionPositiveNegative_ok() {
         double expected = 30;
-        double actual = calculator.calculate(10, -20, SUBSTRACTION);
+        double actual = calculator.calculate(10, -20, SUBTRACTION);
         assertEquals(expected, actual, DELTA);
     }
 
     @Test
     void calculate_subtractionFirstZero_ok() {
         double expected = -5;
-        double actual = calculator.calculate(0, 5, SUBSTRACTION);
+        double actual = calculator.calculate(0, 5, SUBTRACTION);
         assertEquals(expected, actual, DELTA);
     }
 
     @Test
     void calculate_subtractionSecondZero_ok() {
         double expected = 4;
-        double actual = calculator.calculate(4, 0, SUBSTRACTION);
+        double actual = calculator.calculate(4, 0, SUBTRACTION);
         assertEquals(expected, actual, DELTA);
     }
 
     @Test
     void calculate_subtractionMinMaxDouble_ok() {
         double expected = Double.MAX_VALUE - Double.MIN_VALUE;
-        double actual = calculator.calculate(Double.MAX_VALUE, Double.MIN_VALUE, SUBSTRACTION);
+        double actual = calculator.calculate(Double.MAX_VALUE, Double.MIN_VALUE, SUBTRACTION);
         assertEquals(expected, actual, DELTA);
     }
 
