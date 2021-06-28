@@ -102,9 +102,7 @@ class CalculatorTest {
     @Test
     void calculate_subtractionMinMaxDouble_ok() {
         double expected = Double.MAX_VALUE - Double.MIN_VALUE;
-        double actual = calculator.calculate(Double.MAX_VALUE,
-                                             Double.MIN_VALUE,
-                                             SUBTRACTION);
+        double actual = calculator.calculate(Double.MAX_VALUE, Double.MIN_VALUE, SUBTRACTION);
         assertEquals(expected, actual, DELTA);
     }
 
